@@ -52,7 +52,7 @@ class JetpackSplashActivity : AppCompatActivity() {
     // Keep splash screen showing till data initialized.
     private fun keepSplashScreenLonger(splashScreen: SplashScreen) {
         Log.d("Splash", "SplashActivity#keepSplashScreenLonger()")
-        splashScreen.setKeepVisibleCondition { !viewModel.isDataReady() }
+        splashScreen.setKeepOnScreenCondition { !viewModel.isDataReady() }
     }
 
     // Customize splash screen exit animator.
